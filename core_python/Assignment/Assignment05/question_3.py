@@ -5,17 +5,16 @@
 # b. Senior citizen (above 59) = 50% discount
 # c. Others need to pay full.
 
-no_passengers=int(input("enter the number of passenger:"))
-ticket_price=int(input("enter the price of the one ticket:"))
-i=0
-fare=0
-while i<no_passengers:
-    age=int(input("enter the age of the passengers:"+str(i+1)+": "))
+no_passenger=int(input("enter the number of passenger:"))
+ticket_price=int(input("enter the price of one ticket:"))
+total_amount=0
+for i in range(no_passenger):
+    age=int(input(f"enter the age of the passenger{i+1}:"))
     if age<12:
         fare=ticket_price*0.70
     elif age>59:
         fare=ticket_price*0.50
     else:
-        ticket_price+=fare
-    i+=1
-print(f"\ntotal ticket amount for all passengers:Rs.",total_amount)
+        fare=ticket_price
+    total_amount+=fare
+print("total amount to be paid is:",total_amount,"Rs")
