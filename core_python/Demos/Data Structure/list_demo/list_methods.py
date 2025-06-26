@@ -5,4 +5,5 @@ li=[30,40,10,20]
 li2=li.copy()
 li3=li
 li.append(50)
-print(li.index(11))
+print(li)
+print(li.index(10))
