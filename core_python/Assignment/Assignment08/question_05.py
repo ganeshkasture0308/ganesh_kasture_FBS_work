@@ -12,8 +12,6 @@ def sum_of_primes(n):
         if is_prime(i):
             total += i
     return total
-
-# User input
 num = int(input("Enter the value of n: "))
 result = sum_of_primes(num)
 print("Sum of prime numbers from 1 to", num, "is:", result)
