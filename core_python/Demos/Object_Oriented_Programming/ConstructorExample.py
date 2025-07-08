@@ -16,7 +16,7 @@ class Student:
         
         print("course:",self.course)
         print("address:",self.address)
-        print("########################")
+        print("###############################")
 
 s1=Student(1,"Sujit Wayker","Core python","Manchar")
 s1.display()
